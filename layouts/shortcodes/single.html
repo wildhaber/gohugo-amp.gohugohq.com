@@ -32,12 +32,14 @@
 
     {{ with .attributes }}
             <h3>Parameters</h3>
-            <ul>
+            <ul class="doc-parameters">
             {{ range . }}
                 <li>
-                    {{ .name }} <em>({{ .type }})</em>
-                    {{ with .description }}<p>{{ . }}</p>{{ end }}
-                    {{ with .example }}<blockquote><strong>Example value: </strong> {{ . }}</blockquote>{{ end }}
+                    <div class="parameter">
+                        <strong>{{ .name }}</strong> <em>({{ .type }})</em>
+                    </div>
+                    {{ with .description }}<blockquote class="description">{{ . }}</blockquote>{{ end }}
+                    {{ with .example }}<p class="example"><strong>Example value: </strong> {{ . }}</p>{{ end }}
                 </li>
             {{ end }}
             </ul>

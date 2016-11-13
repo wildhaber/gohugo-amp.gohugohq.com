@@ -4,7 +4,6 @@
   "description": "documentation repository for gohugo-amp theme",
   "main": "index.js",
   "scripts": {
-    "postinstall": "cd ./themes/gohugo-amp/ && npm install",
     "go": "npm run hugo:server",
     "hugo:server": "hugo server --buildDrafts --buildFuture",
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -92,3 +92,50 @@ ul, ol {
     margin: $gutter / 4 $gutter / 2;
   }
 }
+
+.doc-parameters {
+
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    display: block;
+    margin: 0;
+    margin-bottom: $gutter / 2;
+  }
+
+  & blockquote, & .example {
+    border-left: 5px solid $accent-serious;
+    background-color: lighten($accent-serious, 40);
+    color: $dark;
+
+    line-height: 1em;
+    font-size: 1em;
+
+    padding: 1em;
+    margin: 0;
+  }
+
+  & .example {
+    background-color: lighten($accent-serious, 50);
+  }
+
+  .parameter {
+    display: block;
+    padding: 1em;
+    background-color: $accent-serious;
+    color: $light;
+
+    margin: 0;
+
+    strong {
+      display: inline-block;
+      padding: 0 0.5em;
+      border-radius: 0.25em;
+      line-height: 2em;
+      background-color: darken($accent-serious, 10);
+    }
+
+  }
+
+}
