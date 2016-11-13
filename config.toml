@@ -1,0 +1,17 @@
+baseurl = "https://gohugo-amp.gohugohq.com/"
+languageCode = "en-us"
+title = "gohugo-amp starter theme"
+theme = "gohugo-amp"
+enableRobotsTXT = true
+
+[params]
+    amp = true
+    ampCdnRoot = "https://cdn.ampproject.org/"
+    ampElements = ["amp-accordion","amp-ad","amp-analytics","amp-carousel","amp-iframe","amp-app-banner","amp-dynamic-css-classes","amp-form","amp-fx-flying-carpet","amp-image-lightbox","amp-lightbox","amp-sidebar","amp-social-share","amp-sticky-ad","amp-user-notification"]
+    ampRelease = "v0"
+    ampElementsVersion = "0.1"
+    themeColor = "#112233"
+    adsensePublisher = "ca-pub-5974434542022780"
+    googleAnalytics = "UA-44134665-13"
+    appleItunesApp = "app-id=123456789, app-argument=app-name://link/to/app-content"
+    ampManifest = "/amp-manifest.json"

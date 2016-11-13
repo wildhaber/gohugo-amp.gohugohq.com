@@ -1,0 +1,16 @@
+name = "gohugo-amp"
+license = "MIT"
+licenselink = "https://github.com/wildhaber/gohugo-amp/blob/develop/LICENSE"
+description = "starter theme gohugo and amp gohugo"
+homepage = "https://gohugo-amp.gohugohq.com"
+tags = ["blog", "amp", "seo", "starter"]
+features = ["blog","amp","seo","schema"]
+min_version = 0.17
+
+[[authors]]
+    [author]
+        name = "Raphael Wildhaber"
+        homepage = "https://github.com/wildhaber"
+    [author]
+        name = "Lucas Jahn"
+        homepage = "https://github.com/lucasjahn"

@@ -1,0 +1,38 @@
+{
+  "name": "gohugo-amp.gohugohq.com",
+  "version": "1.0.0",
+  "description": "documentation repository for gohugo-amp theme",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd ./themes/gohugo-amp/ && npm install",
+    "go": "npm run hugo:server",
+    "hugo:server": "hugo server --buildDrafts --buildFuture",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:prod": "npm run theme:build && hugo && npm run optimize:html",
+    "theme:build": "cd ./themes/gohugo-amp/ && npm install && npm run build",
+    "theme:watch": "cd ./themes/gohugo-amp/ && npm run styles:watch",
+    "optimize:html": "html-minifier --input-dir ./public/ --output-dir ./public/ --file-ext html -c ./.html-minifier-config.json"
+  },
+  "author": "Raphael Wildhaber",
+  "license": "UNLICENSED",
+  "dependencies": {},
+  "devDependencies": {
+    "html-minifier": "^3.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wildhaber/gohugo-amp.gohugohq.com.git"
+  },
+  "keywords": [
+    "gohugo",
+    "amp",
+    "theme",
+    "starterkit",
+    "hugo",
+    "static-site-generator"
+  ],
+  "bugs": {
+    "url": "https://github.com/wildhaber/gohugo-amp.gohugohq.com/issues"
+  },
+  "homepage": "https://gohugo-amp.gohugohq.com"
+}
