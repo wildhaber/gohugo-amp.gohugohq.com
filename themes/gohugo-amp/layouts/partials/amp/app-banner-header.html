@@ -1,0 +1,6 @@
+{{ if isset $.Site.Params "appleItunesApp" }}
+<meta name="apple-itunes-app" content="{{ $.Site.Params.appleItunesApp }}">
+{{ end }}
+{{ if isset $.Site.Params "ampManifest" }}
+<link rel="amp-manifest" href="{{ $.Site.Params.ampManifest }}">
+{{ end }}

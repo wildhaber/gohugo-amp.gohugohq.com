@@ -1,0 +1,29 @@
+/*
+  gohugo-amp-starter
+  ----
+  this is just a minimal styling entry point for your custom stylesheet
+  you can replace the following styles with your own stylesheet
+  or import them writing:
+   @import 'path/to/your/stylesheet.scss'
+*/
+
+$light : #ffffff;
+$dark : #112233;
+
+body {
+  background-color: $light;
+  color: $dark;
+  font-size: 14px;
+  text-align: center;
+  font-family: Helvetica, Arial, non-serif;
+}
+
+h1 {
+  font-size: 4em;
+  font-family: Georgia, serif;
+  transition: color 0.4s;
+}
+
+p {
+  font-size: 2em;
+}
