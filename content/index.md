@@ -12,7 +12,8 @@ index = true
   
 +++
 
-# gohugo-amp-starter
+# gohugo-amp
 I look beautiful, fast and productive.
 
-{{% amp-adsense width="320" height="50" slot="2195367133" sticky="true" %}}
+ - [getting started](/install/)
+ - [kitchen sink](/kitchen-sink/)

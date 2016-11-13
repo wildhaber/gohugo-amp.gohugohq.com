@@ -1,0 +1,94 @@
+$light : #ffffff;
+$dark : #112233;
+$gutter : 30px;
+$base-font-size: 14px;
+$accent-color: #ff1d55;
+$accent-serious: #0379C4;
+$very-light: #f7f7f7;
+
+body {
+  background-color: $light;
+  color: $dark;
+  font-size: $base-font-size;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  padding: $gutter;
+}
+
+main {
+  max-width: 858px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 3em;
+  line-height: 2em;
+  font-family: Georgia, serif;
+  transition: color 0.4s;
+}
+
+h2 { font-size: 2em; margin: $gutter 0; }
+h3 { font-size: 1.8em; margin: $gutter 0; }
+h4 { font-size: 1.6em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1em; }
+
+p {
+  line-height: 1.4em;
+  font-size: 1.2em;
+  margin: $gutter / 2 0;
+}
+
+blockquote {
+  border-left: 5px solid $accent-color;
+  background-color: lighten($accent-color, 40);
+
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.lightbox {
+  background-color: rgba($accent-serious, 0.4);
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: $gutter;
+}
+
+code {
+
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+  p > & {
+    color: $accent-color;
+  }
+
+  pre & {
+    display: block;
+    background-color: $very-light;
+    padding: $gutter / 2;
+    overflow: auto;
+    color: $dark;
+    line-height: 1.4em;
+  }
+
+}
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+
+  transition: color 0.4s;
+
+  &:hover {
+    color: darken($accent-color, 10);
+  }
+}
+
+ul, ol {
+  margin: $gutter / 4 $gutter / 4;
+  padding: $gutter / 4 $gutter / 2;
+
+  li {
+    margin: $gutter / 4 $gutter / 2;
+  }
+}

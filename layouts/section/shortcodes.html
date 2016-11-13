@@ -1,0 +1,17 @@
+{{ partial "structure/head" . }}
+
+<main>
+
+    <h1>Shortcodes &amp; Partials</h1>
+
+    <ul>
+    {{ range .Data.Pages }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+    </ul>
+
+    <blockquote>There is still a lot of work in progress here. Have a look at the <a href="/kitchen-sink">kitchen sink listing all elements</a></blockquote>
+
+</main>
+
+{{ partial "structure/foot" . }}

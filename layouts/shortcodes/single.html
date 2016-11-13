@@ -1,0 +1,60 @@
+{{ partial "structure/head" . }}
+
+<main>
+    <h1>{{ .Title }}</h1>
+
+    {{ $permalink := .RelPermalink }}
+
+    {{ with .Params.documentation }}
+
+        {{ with .element }}
+            <h3>Element</h3>
+            <p>Name: <a href="{{ $permalink }}"><strong>{{ . }}</strong></a></p>
+<p><pre><code>[amp]
+    elements = ["{{ . }}"]</code></pre></p>
+    <blockquote>Add the element to the front-matters parameter autoloading the amp resource:</blockquote>
+        {{ end }}
+
+    {{ with .examples }}
+    <h3>Example</h3>
+    {{ range . }}
+    {{ with .description }}<blockquote>{{ . }}</blockquote>{{ end }}
+{{ with .code }}<p><pre><code>{{ range . }}{{ . }}
+{{ end }}</code></pre></p>{{ end }}
+    {{ end }}
+    {{ end }}
+{{ end }}
+
+    <h3>Demo</h3>
+    {{ .Content }}
+
+    {{ with .Params.documentation }}
+
+    {{ with .attributes }}
+            <h3>Parameters</h3>
+            <ul>
+            {{ range . }}
+                <li>
+                    {{ .name }} <em>({{ .type }})</em>
+                    {{ with .description }}<p>{{ . }}</p>{{ end }}
+                    {{ with .example }}<blockquote><strong>Example value: </strong> {{ . }}</blockquote>{{ end }}
+                </li>
+            {{ end }}
+            </ul>
+        {{ end }}
+
+        {{ with .references }}
+            <h3>Further Documentation</h3>
+            <ul>
+            {{ range . }}
+                <li><a href="{{ .url }}">{{ .title }}</a></li>
+            {{ end }}
+            </ul>
+        {{ end }}
+
+    {{ end }}
+
+
+</main>
+
+{{ partial "structure/foot" . }}
