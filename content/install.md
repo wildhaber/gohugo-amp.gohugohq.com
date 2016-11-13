@@ -31,7 +31,7 @@ $ cd gohugo-amp
 $ npm install
 ```
 
-An extended [theme documentation]((https://gohugo-amp.gohugohq.com)) at [gohugo-amp.gohugohq.com](https://gohugo-amp.gohugohq.com). For more information about the theme installation read the official [setup guide](https://gohugo.io/overview/installing/) of Hugo.
+An extended [theme documentation](https://gohugo-amp.gohugohq.com) at [gohugo-amp.gohugohq.com](https://gohugo-amp.gohugohq.com). For more information about the theme installation read the official [setup guide](https://gohugo.io/overview/installing/) of Hugo.
 
 ## Configuration
 
