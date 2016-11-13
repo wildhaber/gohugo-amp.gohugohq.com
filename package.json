@@ -8,8 +8,8 @@
     "go": "npm run hugo:server",
     "hugo:server": "hugo server --buildDrafts --buildFuture",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:prod": "npm run theme:build && cd ../../ && hugo && npm run optimize:html",
-    "theme:build": "cd ./themes/gohugo-amp/ && npm install && npm run build",
+    "build:prod": "npm run theme:build && hugo && npm run optimize:html",
+    "theme:build": "cd ./themes/gohugo-amp/ && npm install && cd ../../ ",
     "theme:watch": "cd ./themes/gohugo-amp/ && npm run styles:watch",
     "optimize:html": "html-minifier --input-dir ./public/ --output-dir ./public/ --file-ext html -c ./.html-minifier-config.json"
   },
