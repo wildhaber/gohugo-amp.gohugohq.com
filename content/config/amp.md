@@ -12,7 +12,7 @@ title = "amp configuration"
 
 # amp configuration
 
-From the base configuration the following attributes are relevant for a successful configuration of AMP. All the configuration parameters living in the `[params]` section of your `config.toml` in the root folder of your HUGO project.
+From the base configuration the following attributes are relevant for a successful configuration of AMP. All the configuration parameters living in the `[params]` section of your [`config.toml`](/config/) in the root folder of your HUGO project.
 
 ### enable amp
 

@@ -10,15 +10,20 @@ title = "configuration - config.toml"
   
 +++
 
-# configuration
-
-Configuration explained:
+# Configurations
 
  - [AMP Configuration](/config/amp/) 
+ - [Appearance](/config/appearance/) 
+ - [AdSense](/config/adsense/) 
+ - [Analytics](/config/analytics/) 
+ - [App-Banner](/config/app-banner/) 
+ - [Schema WebSite](/config/schema-website/) 
+ - [Schema Organization](/config/schema-organization/) 
+ - [Schema Article](/config/schema-article/) 
 
 ---
  
-Example `config.toml`
+Example `config.toml` file
 
 ```toml
 [params]
