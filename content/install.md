@@ -60,8 +60,6 @@ $ npm run styles:watch
 
 Why we had to do this process you can read in the [official amp-project documentation](https://www.ampproject.org/docs/guides/responsive_amp).
 
-Further information about AMP Analytics you will find in the [official documentation of the amp-project](https://www.ampproject.org/docs/reference/components/amp-analytics).
-
 ## Contributing
 
 Have you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](https://github.com/wildhaber/gohugo-amp/issues) to let me know. Alternatively, make a [pull request](https://github.com/wildhaber/gohugo-amp/pulls) directly.
