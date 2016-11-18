@@ -4,6 +4,7 @@
   "@type": "Organization",
   "name": "{{ .Site.Params.organisationName }}",
   "url": "{{ .Site.BaseURL }}"
+  {{ with .Site.Params.socialProfiles }}, "sameAs": {{ . }}{{ end }}
   {{ with .Site.Params.organisationLogo }}, "logo": "{{ . }}"{{ end }}
   {{ with .Site.Params.organisationAddress }}, "address": "{{ . }}"{{ end }}
   {{ with .Site.Data.organisation.contacts.contactPoint }}, "contactPoint": {{ . }}{{ end }}
