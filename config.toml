@@ -15,3 +15,4 @@ enableRobotsTXT = true
     googleAnalytics = "UA-44134665-13"
     appleItunesApp = "app-id=123456789, app-argument=app-name://link/to/app-content"
     ampManifest = "/amp-manifest.json"
+    alternatePageName = "HUGO AMP"
