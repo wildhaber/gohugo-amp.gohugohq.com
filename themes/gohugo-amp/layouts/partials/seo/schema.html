@@ -3,3 +3,4 @@
 {{ partial "seo/structured/breadcrumb" . }}
 
 {{ if eq .Params.structured.type "Article" }}{{ partial "seo/structured/article" . }}{{ end }}
+{{ if eq .Params.structured.type "Course" }}{{ partial "seo/structured/course" . }}{{ end }}
