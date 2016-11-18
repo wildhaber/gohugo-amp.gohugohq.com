@@ -8,10 +8,8 @@ tags = []
 [amp]
     elements = []
     
-[article]
-    lead = ""
-    category = ""
-    related = []
+[structured]
+    type = "Article"
 
 [author]
     name = ""
@@ -21,6 +19,8 @@ tags = []
 
 [image]
     src = ""
+    width = 
+    height = 
     title = ""
     author = ""
     link = ""
