@@ -3,14 +3,14 @@
     "draft" : false,
     "title" : "amp-app-banner",
     "amp" : {
-        "elements" : ["amp-app-banner"]
+        "elements" : []
     },
     "documentation" : {
         "category" : "Advertising",
         "element" : "amp-app-banner",
         "examples" : {
             "default" : {
-                "code" : ["{{ with $.Site.Data.app.banner }}{{ partial \"amp/app-banner\" . }}{{ end }}"]
+                "code" : ["{{ if $.Site.Params \"appManifest\" }}{{ with $.Site.Data.app.banner }}{{ partial \"amp/app-banner\" . }}{{ end }}{{ end }}"]
             }
         },
         "references" : [{

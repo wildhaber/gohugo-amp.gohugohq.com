@@ -10,7 +10,12 @@
         "element" : "amp-fx-flying-carpet",
         "examples" : {
             "default" : {
-                "code" : ["{{% amp-fx-flying-carpet","   height='250'","   imgSrc='http://lorempixel.com/1600/900/sports/5/'","   imgWidth='800'","   imgHeight='450'","%}}"]
+                "description" : "usage as shortcode",
+                "code" : ["{{% amp-fx-flying-carpet","   height=\"250\"","   imgSrc=\"http://lorempixel.com/1600/900/sports/5/\"","   imgWidth=\"800\"","   imgHeight=\"450\"","%}}"]
+            },
+            "partial" : {
+                "description" : "usage as partial",
+                "code" : ["{{ partial \"amp/fx-flying-carpet\" (dict \"height\" \"250\" \"imgSrc\" \"http://lorempixel.com/1600/900/sports/5/\" \"imgWidth\" \"800\" \"imgHeight\" \"450\") }}"]
             }
         },
         "references" : [{

@@ -10,7 +10,12 @@
         "element" : "amp-audio",
         "examples" : {
             "default" : {
+              "description" : "usage as shortcode",
               "code" : ["{{% amp-audio ", "   width=\"300\"", "   height=\"35\"", "   src=\"https://ia801402.us.archive.org/16/items/EDIS-SRP-0197-06/EDIS-SRP-0197-06.mp3\"", "   mp3=\"https://ia801402.us.archive.org/16/items/EDIS-SRP-0197-06/EDIS-SRP-0197-06.mp3\"", "   ogg=\"//sample.ogg.fallback.ogg\"", "   autoplay=\"true\"","   loop=\"true\"","   muted=\"true\"", "%}}"]
+            },
+            "partial" : {
+              "description" : "usage as partial",
+              "code" : ["{{ partial \"amp/audio\" (dict \"width\" \"300\" \"height\" \"35\" \"src\" \"https://ia801402.us.archive.org/16/items/EDIS-SRP-0197-06/EDIS-SRP-0197-06.mp3\" \"mp3\" \"https://ia801402.us.archive.org/16/items/EDIS-SRP-0197-06/EDIS-SRP-0197-06.mp3\" \"ogg\" \"//sample.ogg.fallback.ogg\" \"autoplay\" \"true\" \"loop\" \"true\" \"muted\" \"true\") }}"]
             }
         },
         "references" : [{

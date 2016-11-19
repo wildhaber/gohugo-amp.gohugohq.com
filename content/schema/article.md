@@ -92,4 +92,4 @@ This will generate the following **valid structured data** in the head-section:
 </script>
 ```
 
-> Please not that the `publisher`-Data are rendered from the [`config.toml`](/config/) in the [`publisher`-Section](/config/schema-article).
+> Please note that the `publisher`-Data are rendered from the [`config.toml`](/config/) in the [`publisher`-Section](/config/schema-article).
