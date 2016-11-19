@@ -8,9 +8,9 @@ const outputFile = './layouts/partials/stylesheet.html';
 sass.render({
     file: inputFile,
     outputStyle: 'compressed'
-}, function(error, result) { // node-style callback from v3.0.0 onwards
+}, function(error, result) {
     if (error) {
-        console.log(error.status); // used to be "code" in v2x and below
+        console.log(error.status);
         console.log(error.column);
         console.log(error.message);
         console.log(error.line);

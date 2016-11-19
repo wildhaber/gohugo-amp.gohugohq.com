@@ -1,11 +1,85 @@
 {{ partial "structure/head" . }}
-
-<main>
+{{ partial "header" . }}
+<main class="main-index">
     {{ range .Data.Pages }}
     {{ if eq .Params.index true }}
     {{ .Content }}
     {{ end }}
     {{ end }}
+
+    <hr>
+
+    <section class="teaser">
+        <div class="content">
+            <h3>Quick installation</h3>
+            <p>Go to the directory where you have your Hugo site and run the following commands in the terminal.</p>
+        </div>
+        <aside><pre><code>$ mkdir themes
+$ cd themes
+$ git clone https://github.com/wildhaber/gohugo-amp.git
+$ rm -rf gohugo-amp/.git</code></pre>
+        </aside>
+    </section>
+
+    <hr>
+
+    <section class="boxes">
+        <section class="box">
+            <h3><a href="/install/">Getting Started</a></h3>
+            <p>Complete your installation and setup configuration.</p>
+        </section>
+
+        <section class="box">
+            <h3><a href="/config/">Configuration</a></h3>
+            <p>Easy configuration for automatic AMP integration.</p>
+        </section>
+
+        <section class="box">
+            <h3><a href="/kitchen-sink/">Kitchen-Sink</a></h3>
+            <p>Discover all custom made AMP elements in action.</p>
+        </section>
+
+        <section class="box">
+            <h3><a href="/schema/">Structured Data</a></h3>
+            <p>Inject valid structured data automatically.</p>
+        </section>
+
+        <section class="box">
+            <h3><a href="/shortcodes/">Shortcodes &amp; Partials</a></h3>
+            <p>From amp-analytics to amp-youtube find your documentation.</p>
+        </section>
+
+        <section class="box">
+            <h3><a href="https://github.com/wildhaber/gohugo-amp/">Github</a></h3>
+            <p>All code is on Github along with an MIT-License.</p>
+        </section>
+    </section>
+
+    <hr>
+
+
+    <section class="teaser">
+        <div class="content content-full">
+            <h3>Contributing</h3>
+            <p> Have you found a bug or got an idea for a new feature? Feel free to use the <a href="https://github.com/wildhaber/gohugo-amp/issues">issue tracker</a> to let me know. Alternatively, make a <a href="https://github.com/wildhaber/gohugo-amp/pulls">pull request</a> directly.</p>
+        </div>
+    </section>
+
+    <section class="teaser">
+        <div class="content content-full">
+            <h3>License</h3>
+            <p>gohugo-amp released under the <a href="https://github.com/wildhaber/gohugo-amp/blob/master/LICENSE">MIT License</a>.</p>
+        </div>
+    </section>
+
+    <section class="teaser">
+        <div class="content content-full">
+            <h3>Thanks</h3>
+            <p>Thanks to <a href="https://github.com/spf13">Steve Francia</a> for creating Hugo and the awesome community around the project.</p>
+        </div>
+    </section>
+
+
 </main>
 
 {{ partial "custom/footer" . }}
