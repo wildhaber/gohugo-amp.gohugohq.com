@@ -255,18 +255,36 @@ header {
   position: relative;
 
   .brand {
+
+    width: 300px;
+    height: 30px;
+
+    @media (max-width: 500px) {
+        width: 150px;
+     }
+
+    background-image: url('/logo-letters-negative.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 300px 30px;
+    overflow: hidden;
+
     display: inline-block;
     position: absolute;
-    left: $gutter;
+    left: $gutter / 2;
     top: $gutter / 1.5;
     line-height: $gutter / 2;
     text-transform: uppercase;
     padding: $gutter / 4;
     font-size: 1.4em;
 
+    color: rgba(0,0,0,0);
+
+    transition: width 0.2s;
+
     &:hover {
-      background-color: #ff1d55;
-      color: $light;
+      color: rgba(0,0,0,0);
+      background-color: transparent;
     }
 
   }
@@ -341,7 +359,8 @@ header {
 
 .sidebarNavigation {
 
-  width: $gutter * 7;
+  width: $gutter * 10;
+
   max-width: 95%;
 
   ul {
@@ -439,8 +458,8 @@ footer {
     font-size: 12px;
 
     h3 {
-      font-size: 12px;
-      line-height: 1em;
+      font-size: 1.2em;
+      line-height: 1.3em;
       padding: 0px;
       margin: 0px;
     }
@@ -452,7 +471,7 @@ footer {
 
     p {
       color: $boring-grey;
-      font-size: 12px;
+      font-size: 1.2em;
       margin: $gutter / 4 0px;
     }
 
@@ -465,4 +484,8 @@ footer {
 
   }
 
+}
+
+.social {
+  text-align: center;
 }
