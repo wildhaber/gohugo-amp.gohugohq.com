@@ -10,7 +10,7 @@
     "build:prod": "npm run theme:build && hugo && npm run optimize:html",
     "theme:build": "cd ./themes/gohugo-amp/ && npm install && cd ../../ ",
     "theme:watch": "cd ./themes/gohugo-amp/ && npm run styles:watch",
-    "optimize:html": "html-minifier --input-dir ./public/ --output-dir ./public/ --file-ext html -c ./.html-minifier-config.json"
+    "optimize:html": "./node_modules/.bin/html-minifier --input-dir ./public/ --output-dir ./public/ --file-ext html -c ./.html-minifier-config.json"
   },
   "author": "Raphael Wildhaber",
   "license": "UNLICENSED",
