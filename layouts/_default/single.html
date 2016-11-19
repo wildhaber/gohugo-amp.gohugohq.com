@@ -1,7 +1,9 @@
 {{ partial "structure/head" . }}
 
 <main>
+    {{ partial "navigation/breadcrumbs" . }}
     {{ .Content }}
 </main>
 
+{{ partial "custom/footer" . }}
 {{ partial "structure/foot" . }}

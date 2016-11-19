@@ -1,31 +1,29 @@
-
-#ignore thumbnails created by windows
+# OS
+.DS_Store
 Thumbs.db
-#Ignore files build by Visual Studio
-*.obj
-*.exe
-*.pdb
-*.user
-*.aps
-*.pch
-*.vspscc
-*_i.c
-*_p.c
-*.ncb
-*.suo
-*.tlb
-*.tlh
-*.bak
-*.cache
-*.ilk
-*.log
-*.dll
-*.lib
-*.sbr
 
-npm_modules/
-node_modules/
+# IDEs
+.buildpath
+.project
+.settings/
+.build/
+.idea/
+public/
+nbproject/
+
+# Vagrant
+.vagrant/
+
+# FE Setup
+/node_modules/
 /npm-debug.log.*
 /npm-debug.log
 /npm-debug.log*
+/bower_components/
+/dist/
+/src/client.config.json
+/styleguide/
+/docs/
+
+/junit.xml
 partials/structure/stylesheet.html

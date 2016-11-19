@@ -2,10 +2,11 @@
 
 <main>
     {{ range .Data.Pages }}
-        {{ if eq .Params.index true }}
-            {{ .Content }}
-        {{ end }}
+    {{ if eq .Params.index true }}
+    {{ .Content }}
+    {{ end }}
     {{ end }}
 </main>
 
+{{ partial "custom/footer" . }}
 {{ partial "structure/foot" . }}

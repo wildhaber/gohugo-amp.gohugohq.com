@@ -24,3 +24,6 @@
 </head>
 
 <body>
+{{ if isset $.Site.Params "ampManifest" }}
+    {{ with $.Site.Data.app.banner }}{{ partial "amp/app-banner" . }}{{ end }}
+{{ end }}
