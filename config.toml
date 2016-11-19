@@ -16,7 +16,7 @@ enableRobotsTXT = true
 #    appleItunesApp = "app-id=123456789, app-argument=app-name://link/to/app-content"
 #    ampManifest = "/amp-manifest.json"
     alternatePageName = "HUGO AMP"
-    organizationLogo = "https://gohugohq.com/logo.png"
+    organizationLogo = "https://gohugo-amp.gohugohq.com/logo.png"
     organizationName = "gohugohq.com"
 #    organizationAddress = "Some Street 123, 12345 City"
 #    socialProfiles = ["http://www.facebook.com/your-profile","http://instagram.com/yourProfile","http://www.linkedin.com/in/yourprofile","http://plus.google.com/your_profile"]
