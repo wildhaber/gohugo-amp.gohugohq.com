@@ -6,7 +6,7 @@ tags = ["kitchen-sink","elements","shortcodes"]
 title = "kitchen sink"
 
 [amp]
-    elements = ["amp-accordion","amp-ad","amp-anim","amp-analytics","amp-carousel","amp-iframe","amp-app-banner","amp-audio","amp-brid-player","amp-brightcove","amp-dailymotion","amp-dynamic-css-classes","amp-facebook","amp-fit-text","amp-form","amp-fx-flying-carpet", "amp-gfycat", "amp-image-lightbox", "amp-instagram","amp-jwplayer","amp-kaltura-player","amp-lightbox","amp-o2-player", "amp-pinterest", "amp-reddit", "amp-sidebar", "amp-social-share", "amp-soundcloud", "amp-springboard-player", "amp-sticky-ad", "amp-twitter", "amp-user-notification", "amp-vimeo", "amp-vine", "amp-youtube"]
+    elements = ["amp-accordion","amp-ad","amp-anim","amp-analytics","amp-carousel","amp-iframe","amp-audio","amp-brid-player","amp-brightcove","amp-dailymotion","amp-dynamic-css-classes","amp-facebook","amp-fit-text","amp-form","amp-fx-flying-carpet", "amp-gfycat", "amp-image-lightbox", "amp-instagram","amp-jwplayer","amp-kaltura-player","amp-lightbox","amp-o2-player", "amp-pinterest", "amp-reddit", "amp-sidebar", "amp-social-share", "amp-soundcloud", "amp-springboard-player", "amp-sticky-ad", "amp-twitter", "amp-user-notification", "amp-vimeo", "amp-vine", "amp-youtube"]
     
 [sitemap]
   changefreq = "monthly"

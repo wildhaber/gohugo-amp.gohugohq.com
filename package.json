@@ -1,7 +1,7 @@
 {
   "name": "gohugo-amp.gohugohq.com",
   "version": "1.0.0",
-  "description": "documentation repository for gohugo-amp theme. buggy :-(",
+  "description": "documentation repository for gohugo-amp theme. buggy...",
   "main": "index.js",
   "scripts": {
     "go": "npm run hugo:server",
