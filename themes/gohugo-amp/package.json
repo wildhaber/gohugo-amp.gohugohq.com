@@ -3,22 +3,11 @@
   "version": "1.0.0",
   "description": "AMP starter theme for gohugo https://gohugo-amp.gohugohq.com ",
   "main": "index.js",
-  "scripts": {
-    "postinstall": "npm run build",
-    "build": "npm run styles",
-    "styles": "node ./.bin/styling",
-    "styles:watch": "./node_modules/.bin/nodemon -e scss -w ../../ -x npm run styles"
-  },
+  "scripts": {},
   "author": "Raphael Wildhaber",
   "license": "MIT",
   "dependencies": {},
-  "devDependencies": {
-    "autoprefixer": "^6.5.3",
-    "cssnano": "^3.8.0",
-    "node-sass": "^3.11.3",
-    "nodemon": "^1.11.0",
-    "postcss": "^5.2.5"
-  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/wildhaber/gohugo-amp.git"

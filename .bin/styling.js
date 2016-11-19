@@ -2,8 +2,8 @@ var sass = require('node-sass');
 var postcss = require('postcss');
 var fs = require('fs');
 
-const inputFile = './src/styles.scss';
-const outputFile = './layouts/partials/structure/stylesheet.html';
+const inputFile = './layouts/src/styles.scss';
+const outputFile = './layouts/partials/stylesheet.html';
 
 sass.render({
     file: inputFile,
