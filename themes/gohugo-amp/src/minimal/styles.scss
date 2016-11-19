@@ -139,3 +139,41 @@ ul, ol {
   }
 
 }
+
+.main-index {
+  text-align: center;
+
+  a {
+    display: block;
+    padding: 0.5em;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    color: $accent-serious;
+  }
+
+}
+
+.breadcrumbs {
+
+  padding: 1em;
+  background-color: $very-light;
+
+  ul {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+
+    li {
+      display: inline-block;
+      a {
+        color: $dark;
+      }
+
+      &:last-child a {
+        color: $accent-serious;
+      }
+
+    }
+
+  }
+}
