@@ -1,0 +1,22 @@
+{{ if isset $.Site.Params "amp" }}
+
+    {{ range $.Site.Params.ampElements }}
+        <script async custom-element="{{ . }}" src="{{ $.Site.Params.ampCdnRoot }}{{ $.Site.Params.ampRelease }}/{{ . }}-{{ $.Site.Params.ampElementsVersion }}.js"></script>
+    {{ end }}
+
+    {{ with .Params.amp.elements }}
+        {{ range . }}
+            {{ if in $.Site.Params.ampElements . }}
+            {{ else }}
+                <script async custom-element="{{ . }}" src="{{ $.Site.Params.ampCdnRoot }}{{ $.Site.Params.ampRelease }}/{{ . }}-{{ $.Site.Params.ampElementsVersion }}.js"></script>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+    <script async src="{{ $.Site.Params.ampCdnRoot }}{{ $.Site.Params.ampRelease }}.js"></script>
+
+    {{ if isset $.Site.Params "ampManifest" }}
+        {{ partial "amp/app-banner-header" . }}
+    {{ end }}
+
+{{ end }}
