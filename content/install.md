@@ -22,52 +22,25 @@ Go to the directory where you have your Hugo site and run:
 $ mkdir themes
 $ cd themes
 $ git clone https://github.com/wildhaber/gohugo-amp.git
+$ rm -rf gohugo-amp/.git
 ```
 
-Next, you need to build the theme's styling once: 
+---
 
-```
-$ cd gohugo-amp
-$ npm install
-```
-
-## Configuration
+## [Configuration](/config/)
 
 After installing the theme successfully, we recommend you to take a look at the [kitchen sink](/ktichen-sink/). You find extensive documentation and a demonstration of all shortcodes and partials there.
 
 Read more about the `config.toml` in the [configuration example](/config/). You will find explanations how to setup [General AMP Configuration](/config/amp/), [Theme Appearance](/config/appearance/), using [AdSense](/config/adsense/), [Configure Analytics with custom Triggers](/config/analytics/) and [many things more](/config/).
 
-### Styling
+---
 
-Because amp does not allow you to include CSS styles with the regular `link rel='stylesheet'`-tag we need to embed the CSS in the header section. Helping in this case, we provided a workflow that injects the output from `/src/styles.scss` in the header automatically for you. From this entry point, you can import your custom styling as you like.
+## [Styling](/styling/)
 
-Building the styles `gohugo-amp` provides the following `npm scripts` in the [package.json](build-process):
+AMP does not allow you to include CSS styles with the regular `link rel='stylesheet'`-tag we need to embed the CSS in the header section.
 
-**building the styles once** (perfect for automatic deployments) - also included in the postinstall hook
-```
-$ npm run build
-```
+For this case add a file in your regular `layouts/partials/`-folder called `stylesheet.html`. In this file you can write pure CSS (no `<styles>`-Tags required) 
 
-**generates the styles once**
-```
-$ npm run styles
-```
-
-**watching changes** - recommended while development
-```
-$ npm run styles:watch
-```
+Since its not a cool idea have to write your stylesheets in an HTML-File we provide an automated process rendering your Sass output directly in this file. You can read more in our [Guide about Styling](https://gohugo-amp.gohugohq.com/styling/) in the documentation.
 
 Why we had to do this process you can read in the [official amp-project documentation](https://www.ampproject.org/docs/guides/responsive_amp).
-
-## Contributing
-
-Have you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](https://github.com/wildhaber/gohugo-amp/issues) to let me know. Alternatively, make a [pull request](https://github.com/wildhaber/gohugo-amp/pulls) directly.
-
-## License
-
-gohugo-amp released under the [MIT License](https://github.com/wildhaber/gohugo-amp/blob/master/LICENSE).
-
-## Thanks
-
-Thanks to [Steve Francia](https://github.com/spf13) for creating Hugo and the awesome community around the project.

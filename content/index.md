@@ -12,15 +12,13 @@ index = true
   
 +++
 
-# gohugo-amp
-Ready to get excited? I know this theme does not look amazing on the first sight that's why its called a `starter-theme`. Ready for you to make an amazing looking website.
-
-[getting started](/install/)
-[all elements in action](/kitchen-sink/)
-[configuration examples](/config/)
-[structured data](/schema/)
-[shortcodes & partials](/shortcodes/)
-
----
-
-Find this project on [Github](https://github.com/wildhaber/gohugo-amp/).
+{{%
+    amp-image src="/logo.png"
+    srcset="/logo-large.png 1000w, /logo.png 200w"
+    height="450"
+    width="450"
+    layout="responsive"
+    alt="gohugo-amp-theme"
+    attribution="gohugohq.com"
+%}}
+This Hugo theme is supposed to be a starter theme to make it easy to adapt to [Google's AMP-Project](https://www.ampproject.org/). Included in the theme are [**40+ shortcodes and partials**](/shortcodes/) and [automatic Structured Data](/schema/) making it a pleasure to embed AMP-Elements within your content files or your template.

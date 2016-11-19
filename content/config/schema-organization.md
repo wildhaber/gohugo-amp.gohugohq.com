@@ -16,29 +16,29 @@ From the base configuration the following attributes are relevant for a proper O
 
 ### organization
 
-#### organisationLogo
+#### organizationLogo
 
 ```toml
-organisationLogo = "https://gohugohq.com/logo.png"
+organizationLogo = "https://gohugohq.com/logo.png"
 ```
 
 > set organization logo for structured data
 
-#### organisationName
+#### organizationName
 
 ```toml
-organisationName = "gohugohq.com"
+organizationName = "gohugohq.com"
 ```
 
-> set organisation name
+> set organization name
 
-#### organisationLogo
+#### organizationLogo
 
 ```toml
-organisationAddress = "Some Street 123, 12345 City" # set organisation address
+organizationAddress = "Some Street 123, 12345 City" # set organization address
 ```
 
-> set organisation address (optional)
+> set organization address (optional)
 
 #### socialProfiles
 
@@ -46,6 +46,6 @@ organisationAddress = "Some Street 123, 12345 City" # set organisation address
 socialProfiles = ["http://www.facebook.com/your-profile","http://instagram.com/yourProfile","http://www.linkedin.com/in/yourprofile","http://plus.google.com/your_profile"]
 ```
 
-> an array of your social profile URL's. Will be set as `sameAs` in organisation's structured data
+> an array of your social profile URL's. Will be set as `sameAs` in organization's structured data
 
 We recommend reading more about how [gohugo amp-theme is using structured data automatically](/schema/) in the schema Section.

@@ -5,33 +5,42 @@ $base-font-size: 14px;
 $accent-color: #ff1d55;
 $accent-serious: #0379C4;
 $very-light: #f7f7f7;
+$boring-grey: #696969;
 
 body {
   background-color: $light;
   color: $dark;
   font-size: $base-font-size;
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
-  padding: $gutter;
 }
 
 main {
-  max-width: 858px;
+  max-width: 1180px;
+  padding: $gutter;
   margin: 0 auto;
+
+  h1 + p {
+    @media (min-width: 900px) {
+      font-size: 2em;
+    }
+  }
+
 }
 
 h1 {
   font-weight: 300;
   font-size: 3em;
-  line-height: 2em;
+  line-height: 1.4em;
+  margin: 0.5em 0;
   font-family: Georgia, serif;
   transition: color 0.4s;
 }
 
-h2 { font-size: 2em; margin: $gutter 0; }
-h3 { font-size: 1.8em; margin: $gutter 0; }
-h4 { font-size: 1.6em; }
-h5 { font-size: 1.2em; }
-h6 { font-size: 1em; }
+h2 { font-weight: 300; font-size: 2em; margin: $gutter 0; }
+h3 { font-weight: 300; font-size: 1.8em; margin: $gutter 0; }
+h4 { font-weight: 300; font-size: 1.6em; }
+h5 { font-weight: 300; font-size: 1.2em; }
+h6 { font-weight: 300; font-size: 1em; }
 
 p {
   line-height: 1.4em;
@@ -77,7 +86,7 @@ a {
   color: $accent-color;
   text-decoration: none;
 
-  transition: color 0.4s;
+  transition: color 0.4s, background 0.4s;
 
   &:hover {
     color: darken($accent-color, 10);
@@ -140,18 +149,70 @@ ul, ol {
 
 }
 
-.main-index {
-  text-align: center;
+hr {
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: $very-light;
+  border: 0;
+}
 
-  a {
-    display: block;
-    padding: 0.5em;
-    font-size: 1.4em;
-    line-height: 1.4em;
-    color: $accent-serious;
+.teaser {
+  display: flex;
+  text-align: left;
+  align-content: center;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  aside {
+    flex-basis: 60%;
+    align-self: center;
+    @media (max-width: 700px) { flex-basis: 100%; }
+    padding: $gutter;
+  }
+
+  .content {
+    flex-basis: 40%;
+    align-self: center;
+    color: $boring-grey;
+    font-size: 12px;
+
+    @media (max-width: 700px) { flex-basis: 100%; }
+
+    &.content-full {
+      flex-basis: 100%;
+    }
+
+    h3 {
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $dark;
+    }
+
   }
 
 }
+
+.main-index {
+  text-align: center;
+
+  amp-img {
+    margin: $gutter / 2 auto;
+    width: 50%;
+  }
+
+
+  p {
+    @media (min-width: 900px) {
+      font-size: 2em;
+    }
+  }
+
+}
+
+
 
 .breadcrumbs {
 
@@ -165,15 +226,243 @@ ul, ol {
 
     li {
       display: inline-block;
+      margin: 0 0.5em;
+
+      &::before {
+        content: ' / ';
+        position: relative;
+        margin-left: -0.5em;
+        color: $boring-grey;
+      }
+
       a {
-        color: $dark;
+        color: $boring-grey;
       }
 
       &:last-child a {
-        color: $accent-serious;
+        color: $accent-color;
       }
 
     }
 
   }
+}
+
+header {
+  background-color: $accent-color;
+  color: $light;
+  padding: $gutter;
+  position: relative;
+
+  .brand {
+    display: inline-block;
+    position: absolute;
+    left: $gutter;
+    top: $gutter / 1.5;
+    line-height: $gutter / 2;
+    text-transform: uppercase;
+    padding: $gutter / 4;
+    font-size: 1.4em;
+
+    &:hover {
+      background-color: #ff1d55;
+      color: $light;
+    }
+
+  }
+
+  a {
+    color: $light;
+    text-decoration: none;
+    border-radius: $gutter / 4;
+
+    padding: $gutter / 4;
+
+    &:hover {
+      text-decoration: none;
+      background-color: $light;
+      color: $accent-color;
+    }
+
+  }
+
+  nav {
+
+    ul {
+
+      padding: 0px;
+      margin: 0px;
+      display: block;
+
+      text-align: right;
+
+      li {
+        padding: 0px;
+        margin: 0px $gutter / 4;
+        display: inline-block;
+
+        &.hamburger {
+          display: none;
+          button {
+            position: absolute;
+            right: $gutter;
+            top: $gutter / 1.5;
+            border: 0px;
+            background-color: $light;
+            color: $accent-color;
+            font-weight: bold;
+            border-radius: 50%;
+            width: $gutter;
+            height: $gutter;
+            overflow: hidden;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+          }
+        }
+
+      }
+
+      @media (max-width: 900px) {
+        li {
+          display: none;
+          &.hamburger {
+            display: inline-block;
+          }
+
+        }
+      }
+
+    }
+
+  }
+
+}
+
+.sidebarNavigation {
+
+  width: $gutter * 7;
+  max-width: 95%;
+
+  ul {
+    padding: 0px;
+    margin: 0px;
+
+    li {
+      display: block;
+
+      a {
+        display: block;
+        line-height: 1.4em;
+        padding: $gutter / 4;
+      }
+
+    }
+
+  }
+}
+
+footer {
+  margin: $gutter * 2 auto;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1180px;
+  padding: $gutter;
+
+  font-size: 12px;
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  strong {
+    text-transform: uppercase;
+    margin-bottom: $gutter / 2;
+    display: block;
+    & a {
+      color: darken($boring-grey, 30);
+    }
+  }
+
+  ul {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+
+    li {
+      display: block;
+      line-height: 1.4em;
+      padding: $gutter / 4 0;
+      margin: 0;
+
+      a {
+        color: $boring-grey;
+      }
+
+    }
+
+  }
+
+  .quarter-section {
+    margin-bottom: $gutter;
+    flex-basis: 25%;
+    @media (max-width: 900px) {
+      flex-basis: 33%;
+    }
+    @media (max-width: 700px) {
+      flex-basis: 50%;
+    }
+    @media (max-width: 500px) {
+      flex-basis: 100%;
+    }
+  }
+
+}
+
+.boxes {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 12px;
+
+  .box {
+    flex-basis: 30%;
+    background-color: $very-light;
+    padding: $gutter;
+
+    margin: $gutter / 4 0;
+
+    text-align: left;
+    font-size: 12px;
+
+    h3 {
+      font-size: 12px;
+      line-height: 1em;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    a {
+      padding: 0px;
+      color: $accent-color;
+    }
+
+    p {
+      color: $boring-grey;
+      font-size: 12px;
+      margin: $gutter / 4 0px;
+    }
+
+    @media (max-width: 900px) {
+      flex-basis: 45%;
+    }
+    @media (max-width: 500px) {
+      flex-basis: 100%;
+    }
+
+  }
+
 }

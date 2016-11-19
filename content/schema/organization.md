@@ -12,7 +12,7 @@ title = "Structured Data: Organization"
 
 # Organization
 
-Organization details can be defined in your [`config.toml`](/config/) in the [`organization`-Section](/config/schema-organization). And further contact details can be set in a file called `data/organisation/contacts.json`, you will find an example below.
+Organization details can be defined in your [`config.toml`](/config/) in the [`organization`-Section](/config/schema-organization). And further contact details can be set in a file called `data/organization/contacts.json`, you will find an example below.
 
 ### Organization data are automatically generated
 

@@ -43,11 +43,11 @@ Example `config.toml` file
     ampManifest = "/amp-manifest.json" # required if you want to add the app-banner feature
 
     alternatePageName = "HUGO AMP" # alternative name for website structured data
-    organisationLogo = "https://gohugohq.com/logo.png" # set organisation logo for structured data
-    organisationName = "gohugohq.com" # set organisation name
-    organisationAddress = "Some Street 123, 12345 City" # set organisation address
+    organizationLogo = "https://gohugohq.com/logo.png" # set organization logo for structured data
+    organizationName = "gohugohq.com" # set organization name
+    organizationAddress = "Some Street 123, 12345 City" # set organization address
 
-    socialProfiles = ["http://www.facebook.com/your-profile","http://instagram.com/yourProfile","http://www.linkedin.com/in/yourprofile","http://plus.google.com/your_profile"]  # for sameAs in organisation's structured data
+    socialProfiles = ["http://www.facebook.com/your-profile","http://instagram.com/yourProfile","http://www.linkedin.com/in/yourprofile","http://plus.google.com/your_profile"]  # for sameAs in organization's structured data
 
     publisherName = "gohugohq.com" # publisher used in article schema
     publisherLogo = "https://gohugo-amp.gohugohq.com/logo-publisher.png" # https://developers.google.com/search/docs/data-types/articles#logo-guidelines
