@@ -1,6 +1,9 @@
 {{ partial "structure/head" . }}
 
 <main>
+
+    {{ partial "navigation/breadcrumbs" . }}
+
     <h1>{{ .Title }}</h1>
 
     {{ $permalink := .RelPermalink }}
