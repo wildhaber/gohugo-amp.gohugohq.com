@@ -1,6 +1,6 @@
 {{ partial "structure/head" . }}
 
-<main>
+<main class="main-index">
     {{ range .Data.Pages }}
         {{ if eq .Params.index true }}
             {{ .Content }}

@@ -13,7 +13,14 @@ index = true
 +++
 
 # gohugo-amp
-I look beautiful, fast and productive.
+Ready to get excited? I know this theme does not look amazing on the first sight that's why its called a `starter-theme`. Ready for you to make an amazing looking website.
 
- - [getting started](/install/)
- - [kitchen sink](/kitchen-sink/)
+[getting started](/install/)
+[all elements in action](/kitchen-sink/)
+[configuration examples](/config/)
+[structured data](/schema/)
+[shortcodes & partials](/shortcodes/)
+
+---
+
+Find this project on [Github](https://github.com/wildhaber/gohugo-amp/).
