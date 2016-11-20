@@ -19,7 +19,7 @@
              },
               "partial" : {
                   "description" : "Usage example as partial",
-                  "code" : ["{{ partial \"amp/adsense\" (dict \"width\" \"320\" \"height\" \"50\" \"slot\" \"2195367133\" \"sticky\" \"true\") }}"]
+                  "code" : ["{{ partial \"amp/adsense\" (dict \"context\" $ \"width\" \"320\" \"height\" \"50\" \"slot\" \"2195367133\" \"sticky\" \"true\") }}"]
               }
         },
         "references" : [{
