@@ -7,7 +7,7 @@
     <h1>Shortcodes &amp; Partials</h1>
 
     <ul>
-    {{ range .Data.Pages }}
+    {{ range .Data.Pages.ByTitle }}
         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
     {{ end }}
     </ul>

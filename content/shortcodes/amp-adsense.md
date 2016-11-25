@@ -11,11 +11,11 @@
         "examples" : {
             "default" : {
                 "description" : "Regular adsense display",
-                "code" : ["{{% amp-adsense width=\"300\" height=\"250\" slot=\"2195367133\" %}}"]
+                "code" : ["{{< amp-adsense width=\"300\" height=\"250\" slot=\"2195367133\" >}}"]
             },
              "sticky" : {
                  "description" : "Make a sticky adsense to the bottom",
-                 "code" : ["{{% amp-adsense width=\"320\" height=\"50\" slot=\"2195367133\" sticky=\"true\" %}}"]
+                 "code" : ["{{< amp-adsense width=\"320\" height=\"50\" slot=\"2195367133\" sticky=\"true\" >}}"]
              },
               "partial" : {
                   "description" : "Usage example as partial",

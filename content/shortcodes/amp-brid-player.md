@@ -10,12 +10,12 @@
         "element" : "amp-brid-player",
         "examples" : {
             "video" : {
-              "description" : "run a video",
-              "code" : ["{{% amp-brid-player partner=\"264\" player=\"4144\" video=\"13663\" width=\"480\" height=\"270\" layout=\"responsive\" %}}"]
+              "description" : "run as video",
+              "code" : ["{{< amp-brid-player partner=\"264\" player=\"4144\" video=\"13663\" width=\"480\" height=\"270\" layout=\"responsive\" >}}"]
             },
              "playlist" : {
                "description" : "run a playlist",
-               "code" : ["{{% amp-brid-player partner=\"264\" player=\"4144\" playlist=\"1220\" width=\"480\" height=\"270\" layout=\"responsive\" %}} "]
+               "code" : ["{{< amp-brid-player partner=\"264\" player=\"4144\" playlist=\"1220\" width=\"480\" height=\"270\" layout=\"responsive\" >}}"]
              },
               "partial" : {
                 "description" : "usage as partial",

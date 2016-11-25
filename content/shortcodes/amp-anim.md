@@ -11,7 +11,7 @@
         "examples" : {
             "default" : {
                 "description" : "usage as shortcode",
-                "code" : ["{{% amp-anim ", "    width=\"300\"", "    height=\"250\"", "    attribution=\"The Go gopher was designed by Reneee French and is licensed under CC 3.0 attributions.\"", "    src=\"https://ampbyexample.com/img/gopher.gif\"", "    placeholder=\"https://placehold.it/100x100/ff0000\"", "%}}"]
+                "code" : ["{{< amp-anim ", "    width=\"300\"", "    height=\"250\"", "    attribution=\"The Go gopher was designed by Reneee French and is licensed under CC 3.0 attributions.\"", "    src=\"https://ampbyexample.com/img/gopher.gif\"", "    placeholder=\"https://placehold.it/100x100/ff0000\"", ">}}"]
             },
             "partial" : {
                 "description" : "usage as partial",

@@ -11,7 +11,7 @@
         "examples" : {
             "shortcode" : {
               "description" : "add a button",
-              "code" : ["{{% amp-button onTap=\"my-custom-lightbox\" text=\"Open my custom lightbox\" %}}"]
+              "code" : ["{{< amp-button onTap=\"my-custom-lightbox\" text=\"Open my custom lightbox\" >}}"]
             },
               "partial" : {
                 "description" : "usage as partial",

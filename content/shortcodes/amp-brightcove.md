@@ -10,8 +10,8 @@
         "element" : "amp-brightcove",
         "examples" : {
             "shortcode" : {
-              "description" : "run a video",
-              "code" : ["{{% amp-brightcove account=\"906043040001\" video=\"1401169490001\" player=\"180a5658-8be8-4f33-8eba-d562ab41b40c\" width=\"480\" height=\"270\" layout=\"responsive\" %}}"]
+              "description" : "run as shortcode",
+              "code" : ["{{< amp-brightcove account=\"906043040001\" video=\"1401169490001\" player=\"180a5658-8be8-4f33-8eba-d562ab41b40c\" width=\"480\" height=\"270\" layout=\"responsive\" >}}"]
             },
               "partial" : {
                 "description" : "usage as partial",
