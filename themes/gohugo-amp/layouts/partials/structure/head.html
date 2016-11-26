@@ -1,3 +1,5 @@
+{{ if ne .Params.amp.enable false }}
+
 <!DOCTYPE html>
 <!--[if lt IE 8 ]><html {{ if isset $.Site.Params "amp" }}amp{{ end }} lang="en" class="no-js oldie"><![endif]-->
 <!--[if IE 8 ]><html {{ if isset $.Site.Params "amp" }}amp{{ end }} lang="en" class="no-js ie8"><![endif]-->
@@ -29,4 +31,8 @@
 <body>
 {{ if isset $.Site.Params "ampManifest" }}
     {{ with $.Site.Data.app.banner }}{{ partial "amp/app-banner" . }}{{ end }}
+{{ end }}
+
+{{ else }}
+    {{ partial "structure/head.no-amp" . }}
 {{ end }}
