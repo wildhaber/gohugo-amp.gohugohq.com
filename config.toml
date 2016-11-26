@@ -24,3 +24,5 @@ enableRobotsTXT = true
     publisherLogo = "https://gohugo-amp.gohugohq.com/logo-publisher.png" # https://developers.google.com/search/docs/data-types/articles#logo-guidelines
     publisherLogoWidth = 600
     publisherLogoHeight = 60
+    stylesheetRegular = ["/base-styling.css"]
+    javascriptRegular = ["/script.js"]

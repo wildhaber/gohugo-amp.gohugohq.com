@@ -3,7 +3,7 @@ var postcss = require('postcss');
 var fs = require('fs');
 
 const inputFile = './layouts/src/styles.scss';
-const outputFile = './layouts/partials/stylesheet.html';
+const outputFiles = ['./layouts/partials/stylesheet.html', './static/base-styling.css'];
 
 sass.render({
     file: inputFile,
@@ -20,11 +20,13 @@ sass.render({
         postcss([ require('autoprefixer'), require('cssnano') ])
             .process(cssOutput)
             .then((result) => {
-                fs.writeFile(outputFile, result.css, function(err) {
-                    if(err) {
-                        return console.log(err);
-                    }
-                    console.log('\u2611 file '+outputFile+' updated with current styling from '+ inputFile);
+                outputFiles.forEach((of) => {
+                    fs.writeFile(of, result.css, function(err) {
+                        if(err) {
+                            return console.log(err);
+                        }
+                        console.log('\u2611 file '+of+' updated with current styling from '+ inputFile);
+                    });
                 });
             });
     }
