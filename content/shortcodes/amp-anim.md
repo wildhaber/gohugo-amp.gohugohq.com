@@ -5,6 +5,7 @@
     "amp" : {
         "elements" : ["amp-anim"]
     },
+    "type" : "shortcode",
     "documentation" : {
         "category" : "Media",
         "element" : "amp-anim",

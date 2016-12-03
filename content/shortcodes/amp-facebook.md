@@ -5,6 +5,7 @@
     "amp" : {
         "elements" : ["amp-facebook"]
     },
+    "type" : "shortcode",
     "documentation" : {
         "category" : "Social",
         "element" : "amp-facebook",

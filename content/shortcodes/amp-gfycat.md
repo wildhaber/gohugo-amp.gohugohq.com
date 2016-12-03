@@ -5,6 +5,7 @@
     "amp" : {
         "elements" : ["amp-gfycat"]
     },
+    "type" : "shortcode",
     "documentation" : {
         "category" : "Media",
         "element" : "amp-gfycat",

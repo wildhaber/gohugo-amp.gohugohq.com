@@ -5,6 +5,7 @@
     "amp" : {
         "elements" : ["amp-hulu"]
     },
+    "type" : "shortcode",
     "documentation" : {
         "category" : "Media",
         "element" : "amp-hulu",

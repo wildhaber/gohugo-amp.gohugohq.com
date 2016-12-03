@@ -489,3 +489,44 @@ footer {
 .social {
   text-align: center;
 }
+
+.pagination {
+
+  ul {
+
+    display: flex;
+    align-content: center;
+    align-self: center;
+
+    li {
+      display: flex;
+
+      &.active a {
+        opacity: 1;
+        font-weight: bold;
+        background-color: $accent-color;
+        color: $light;
+      }
+
+      a {
+        opacity: 0.8;
+
+        border-radius: 50%;
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+        text-align: center;
+
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+      }
+
+    }
+
+  }
+
+}

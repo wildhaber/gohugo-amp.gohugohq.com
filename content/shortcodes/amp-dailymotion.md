@@ -5,6 +5,7 @@
     "amp" : {
         "elements" : ["amp-dailymotion"]
     },
+    "type" : "shortcode",
     "documentation" : {
         "category" : "Media",
         "element" : "amp-dailymotion",

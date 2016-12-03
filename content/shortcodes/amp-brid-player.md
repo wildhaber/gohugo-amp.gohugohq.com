@@ -5,6 +5,7 @@
     "amp" : {
         "elements" : ["amp-brid-player"]
     },
+    "type" : "shortcode",
     "documentation" : {
         "category" : "Media",
         "element" : "amp-brid-player",

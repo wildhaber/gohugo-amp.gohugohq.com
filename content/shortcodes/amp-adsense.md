@@ -5,6 +5,7 @@
     "amp" : {
         "elements" : ["amp-ad"]
     },
+    "type" : "shortcode",
     "documentation" : {
         "category" : "Advertising",
         "element" : "amp-ad",

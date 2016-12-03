@@ -5,6 +5,7 @@
     "amp" : {
         "elements" : []
     },
+    "type" : "shortcode",
     "documentation" : {
         "category" : "Media",
         "element" : "",

@@ -5,6 +5,7 @@
     "amp" : {
         "elements" : ["amp-iframe"]
     },
+    "type" : "shortcode",
     "documentation" : {
         "category" : "Media",
         "element" : "amp-iframe",

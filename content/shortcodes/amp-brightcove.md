@@ -5,6 +5,7 @@
     "amp" : {
         "elements" : ["amp-brightcove"]
     },
+    "type" : "shortcode",
     "documentation" : {
         "category" : "Media",
         "element" : "amp-brightcove",

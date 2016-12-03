@@ -5,6 +5,7 @@
     "amp" : {
         "elements" : ["amp-fx-flying-carpet"]
     },
+    "type" : "shortcode",
     "documentation" : {
         "category" : "Special",
         "element" : "amp-fx-flying-carpet",

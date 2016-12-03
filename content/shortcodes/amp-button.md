@@ -5,6 +5,7 @@
     "amp" : {
         "elements" : ["amp-lightbox"]
     },
+    "type" : "shortcode",
     "documentation" : {
         "category" : "Media",
         "element" : "",
