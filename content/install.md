@@ -29,7 +29,7 @@ $ rm -rf gohugo-amp/.git
 
 ## [Configuration](/config/)
 
-After installing the theme successfully, we recommend you to take a look at the [kitchen sink](/ktichen-sink/). You find extensive documentation and a demonstration of all shortcodes and partials there.
+After installing the theme successfully, we recommend you to take a look at the [kitchen sink](/kitchen-sink/). You find extensive documentation and a demonstration of all shortcodes and partials there.
 
 Read more about the `config.toml` in the [configuration example](/config/). You will find explanations how to setup [General AMP Configuration](/config/amp/), [Theme Appearance](/config/appearance/), using [AdSense](/config/adsense/), [Configure Analytics with custom Triggers](/config/analytics/) and [many things more](/config/).
 
