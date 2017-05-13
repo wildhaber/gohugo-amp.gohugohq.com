@@ -1,6 +1,6 @@
 {{ with .Site.Params.adsensepublisher }}
 
-{{ with .Params }}
+{{ with $.Params }}
 {{ with .sticky }}<amp-sticky-ad layout="nodisplay">{{ end }}
     <amp-ad type="adsense"
             {{ with .width }}width="{{ . }}"{{ end }}
