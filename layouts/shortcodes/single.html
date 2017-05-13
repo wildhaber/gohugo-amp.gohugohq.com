@@ -1,9 +1,9 @@
-{{ partial "structure/head" . }}
-{{ partial "header" . }}
+{{ partial "structure/head.html" . }}
+{{ partial "header.html" . }}
 
 <main>
 
-    {{ partial "navigation/breadcrumbs" . }}
+    {{ partial "navigation/breadcrumbs.html" . }}
 
     <h1>{{ .Title }}</h1>
 
@@ -63,5 +63,5 @@
 
 </main>
 
-{{ partial "custom/footer" . }}
-{{ partial "structure/foot" . }}
+{{ partial "custom/footer.html" . }}
+{{ partial "structure/foot.html" . }}

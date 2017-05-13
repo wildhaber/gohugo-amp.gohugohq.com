@@ -4,5 +4,5 @@
         {{ partial "stylesheet" | safeCSS }}
     </style>
 {{ else }}
-    {{ partial "stylesheet.regular" . }}
+    {{ partial "stylesheet.regular.html" . }}
 {{ end }}

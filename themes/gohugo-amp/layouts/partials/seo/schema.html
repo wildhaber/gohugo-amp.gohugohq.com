@@ -1,7 +1,7 @@
-{{ partial "seo/structured/website" . }}
-{{ partial "seo/structured/organization" . }}
-{{ partial "seo/structured/breadcrumb" . }}
+{{ partial "seo/structured/website.html" . }}
+{{ partial "seo/structured/organization.html" . }}
+{{ partial "seo/structured/breadcrumb.html" . }}
 
-{{ if eq .Params.structured.type "Article" }}{{ partial "seo/structured/article" . }}{{ end }}
-{{ if eq .Params.structured.type "Course" }}{{ partial "seo/structured/course" . }}{{ end }}
-{{ if eq .Params.structured.type "Recipe" }}{{ partial "seo/structured/recipe" . }}{{ end }}
+{{ if eq .Params.structured.type "Article" }}{{ partial "seo/structured/article.html" . }}{{ end }}
+{{ if eq .Params.structured.type "Course" }}{{ partial "seo/structured/course.html" . }}{{ end }}
+{{ if eq .Params.structured.type "Recipe" }}{{ partial "seo/structured/recipe.html" . }}{{ end }}

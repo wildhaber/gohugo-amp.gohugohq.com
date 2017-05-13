@@ -16,7 +16,7 @@
             },
             "partial" : {
                 "description" : "usage as partial",
-                "code" : ["{{ partial \"amp/anim\" (dict \"width\" \"300\" \"height\" \"250\" \"attribution\" \"The Go gopher was designed by Reneee French and is licensed under CC 3.0 attributions.\" \"src\" \"https://ampbyexample.com/img/gopher.gif\" \"placeholder\" \"https://placehold.it/100x100/ff0000\") }}"]
+                "code" : ["{{ partial \"amp/anim.html\" (dict \"width\" \"300\" \"height\" \"250\" \"attribution\" \"The Go gopher was designed by Reneee French and is licensed under CC 3.0 attributions.\" \"src\" \"https://ampbyexample.com/img/gopher.gif\" \"placeholder\" \"https://placehold.it/100x100/ff0000\") }}"]
             }
         },
         "references" : [{

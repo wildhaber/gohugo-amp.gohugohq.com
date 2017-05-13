@@ -20,7 +20,7 @@
              },
               "partial" : {
                 "description" : "usage as partial",
-                "code" : ["{{ partial \"amp/brid-player\" (dict \"partner\" \"264\" \"player\" \"4144\" \"playlist\" \"1220\" \"width\" \"480\" \"height\" \"270\" \"layout\" \"responsive\") }} "]
+                "code" : ["{{ partial \"amp/brid-player.html\" (dict \"partner\" \"264\" \"player\" \"4144\" \"playlist\" \"1220\" \"width\" \"480\" \"height\" \"270\" \"layout\" \"responsive\") }} "]
               }
         },
         "references" : [{

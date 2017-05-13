@@ -4,6 +4,8 @@ title = "gohugo-amp starter theme"
 theme = "gohugo-amp"
 enableRobotsTXT = true
 
+disableKinds = ["taxonomy", "taxonomyTerm", "404"]
+
 [params]
     amp = true
     ampCdnRoot = "https://cdn.ampproject.org/"

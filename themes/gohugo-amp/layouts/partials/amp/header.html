@@ -16,7 +16,7 @@
     <script async src="{{ $.Site.Params.ampCdnRoot }}{{ $.Site.Params.ampRelease }}.js"></script>
 
     {{ if isset $.Site.Params "ampManifest" }}
-        {{ partial "amp/app-banner-header" . }}
+        {{ partial "amp/app-banner-header.html" . }}
     {{ end }}
 
 {{ end }}

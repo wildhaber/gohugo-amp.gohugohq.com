@@ -7,22 +7,22 @@ title = "configuration - config.toml"
   changefreq = "weekly"
   priority = 1.0
   filename = "sitemap.xml"
-  
+
 +++
 
 # Configurations
 
- - [AMP Configuration](/config/amp/) 
- - [Appearance](/config/appearance/) 
- - [AdSense](/config/adsense/) 
- - [Analytics](/config/analytics/) 
- - [App-Banner](/config/app-banner/) 
- - [Schema WebSite](/config/schema-website/) 
- - [Schema Organization](/config/schema-organization/) 
- - [Schema Article](/config/schema-article/) 
+ - [AMP Configuration](/config/amp/)
+ - [Appearance](/config/appearance/)
+ - [AdSense](/config/adsense/)
+ - [Analytics](/config/analytics/)
+ - [App-Banner](/config/app-banner/)
+ - [Schema WebSite](/config/schema-website/)
+ - [Schema Organization](/config/schema-organization/)
+ - [Schema Article](/config/schema-article/)
 
 ---
- 
+
 Example `config.toml` file
 
 ```toml

@@ -16,9 +16,7 @@ nbproject/
 
 # FE Setup
 /node_modules/
-/npm-debug.log.*
-/npm-debug.log
-/npm-debug.log*
+/npm-debug*
 /bower_components/
 /dist/
 /src/client.config.json

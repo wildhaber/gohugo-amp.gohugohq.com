@@ -1,11 +1,11 @@
-{{ partial "structure/head" . }}
-{{ partial "header" . }}
+{{ partial "structure/head.html" . }}
+{{ partial "header.html" . }}
 
 
 {{ $paginator := .Paginate (where .Data.Pages.ByTitle "Section" "shortcodes") 5 }}
 
 <main>
-    {{ partial "navigation/breadcrumbs" . }}
+    {{ partial "navigation/breadcrumbs.html" . }}
 
     <h1>Shortcodes &amp; Partials</h1>
 
@@ -21,5 +21,5 @@
 
 </main>
 
-{{ partial "custom/footer" . }}
-{{ partial "structure/foot" . }}
+{{ partial "custom/footer.html" . }}
+{{ partial "structure/foot.html" . }}

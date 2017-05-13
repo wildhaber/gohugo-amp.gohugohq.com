@@ -1,7 +1,7 @@
 {{ if ne .Params.amp.enable false }}
-    {{ partial "amp/google-analytics" . }}
+    {{ partial "amp/google-analytics.html" . }}
     </body>
 </html>
 {{ else }}
-    {{ partial "structure/foot.no-amp" . }}
+    {{ partial "structure/foot.no-amp.html" . }}
 {{ end }}
