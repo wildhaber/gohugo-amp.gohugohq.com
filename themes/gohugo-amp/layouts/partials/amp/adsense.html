@@ -1,29 +1,31 @@
-{{ if isset $.Site.Params "adsensePublisher" }}
+{{ with .Site.Params.adsensepublisher }}
 
-    {{ with .Params }}
-        {{ with .sticky }}<amp-sticky-ad layout="nodisplay">{{ end }}
-            <amp-ad type="adsense"
-            {{ if isset . "width" }}width="{{ .width }}"{{ end }}
-            {{ if isset . "height" }}height="{{ .height }}"{{ end }}
+{{ with .Params }}
+{{ with .sticky }}<amp-sticky-ad layout="nodisplay">{{ end }}
+    <amp-ad type="adsense"
+            {{ with .width }}width="{{ . }}"{{ end }}
+            {{ with .height }}height="{{ . }}"{{ end }}
             {{ with .layout }}layout="{{ . }}"{{ end }}
-            data-ad-client="{{ $.Site.Params.adsensePublisher }}"
-            {{ if isset . "slot" }}data-ad-slot="{{ .slot }}"{{ end }}>
-            </amp-ad>
-            {{ with .sticky }}</amp-sticky-ad>{{ end }}
-        {{ end }}
-    {{ else }}
+            data-ad-client="{{ $.Site.Params.adsensepublisher }}"
+            {{ with .slot }}data-ad-slot="{{ . }}"{{ end }}>
+    </amp-ad>
+    {{ with .sticky }}</amp-sticky-ad>{{ end }}
+{{ end }}
+{{ else }}
 
-    {{ if isset . "context" }}
-        {{ $publisher := .context.Site.Params.adsensePublisher }}
-        {{ with .sticky }}<amp-sticky-ad layout="nodisplay">{{ end }}
-            <amp-ad type="adsense"
-            {{ if isset . "width" }}width="{{ .width }}"{{ end }}
-            {{ if isset . "height" }}height="{{ .height }}"{{ end }}
+{{ if isset . "context" }}
+
+{{ $publisher := .context.Site.Params.adsensepublisher }}
+
+{{ with .sticky }}<amp-sticky-ad layout="nodisplay">{{ end }}
+    <amp-ad type="adsense"
+            {{ with .width }}width="{{ . }}"{{ end }}
+            {{ with .height }}height="{{ . }}"{{ end }}
             {{ with .layout }}layout="{{ . }}"{{ end }}
             data-ad-client="{{ $publisher }}"
-            {{ if isset . "slot" }}data-ad-slot="{{ .slot }}"{{ end }}>
-            </amp-ad>
-        {{ with .sticky }}</amp-sticky-ad>{{ end }}
-    {{ end }}
+            {{ with .slot }}data-ad-slot="{{ . }}"{{ end }}>
+    </amp-ad>
+    {{ with .sticky }}</amp-sticky-ad>{{ end }}
+{{ end }}
 
 {{ end }}
