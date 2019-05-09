@@ -3,8 +3,6 @@ date = "2016-10-16T19:28:41+02:00"
 draft = false
 title = "gohugohq. - your gohugo guide"
 
-index = true
-
 [sitemap]
   changefreq = "daily"
   priority = 1.0
